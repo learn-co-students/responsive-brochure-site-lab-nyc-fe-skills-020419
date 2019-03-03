@@ -1,0 +1,322 @@
+
+.header-1 {
+  font-size:20px;
+  font-family:'Montserrat', 'sans-serif';
+  text-align:center;
+  background-color: #e8e8ff;
+  margin:10px auto;
+  padding:16px;
+  width:50%;
+  border: 1px solid #fff2f2;
+  box-shadow:  -1px 1px #f7f7fc, -2px 2px #f7f7fc, -3px 3px #f7f7fc, -4px 4px #f7f7fc, -5px 5px #f7f7fc;
+}
+.small .round {
+  width:50%;
+  height:30%;
+}
+  .header-p {
+  text-align:center;
+  font-size:16px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  background-color: #fff2f2;
+  margin:10px auto;
+  padding:16px;
+  width:90%;
+}
+  .header-brands {
+  font-size:20px;
+  font-family:'Montserrat', 'sans-serif';
+  text-align:center;
+  background-color: #e8e8ff;
+  margin:10px auto;
+  padding:16px;
+  width:30%;
+  border: 1px solid #fff2f2;
+  box-shadow:  -1px 1px #f7f7fc, -2px 2px #f7f7fc, -3px 3px #f7f7fc, -4px 4px #f7f7fc, -5px 5px #f7f7fc;
+}
+
+body {
+  background-image: url("http://www.wallpapers13.com/wp-content/uploads/2016/07/Miami-South-Beach-Florida-Desktop-Wallpaper-HD-1920x1200-915x515.jpg"),
+  linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 1080px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  background-attachment: fixed;
+  letter-spacing: -1px;
+}
+  #brands img {
+    display:inline-block;
+    width:33%;
+    border: 5px #ccc solid;
+    padding: 1px;
+    background: #F3EBE9;
+    padding:15px 15px 15px 15px;
+}
+
+  .column {
+     width:33%;
+    display:inline-block;
+    margin:10px auto;
+  }
+
+  .grid-container {
+  display:grid;
+  grid-template-columns: repeat(1, 80%); 
+  grid-template-rows:100px 100px 100px 100px;
+  grid-auto-rows:100px;
+  justify-content:center;
+  align-items:center;
+  margin:10px auto;
+  height:400px;
+  grid-template-areas: 
+  "grid-1"
+  "grid-2"
+  "grid-3"
+  "grid-4";
+  border: 5px #f7f7fc solid;
+}
+
+.item {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  font-size:10px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  text-align:center;
+}
+
+.grid-1 {
+  grid-area:grid-1;
+}
+
+.grid-2 {
+  grid-area:grid-2;
+}
+.grid-3 {
+  grid-area:grid-3;
+}
+
+.grid-4 {
+  grid-area:grid-4;
+}
+
+.container-flex-2 {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  height:900px;
+  margin:10px;
+  justify-content: space-between;
+  align-items:center;
+  flex-template-column-areas:
+  "box box1"
+  "box box2"
+  "box box3"
+  "box box4"
+  "box box5"
+  "box box6";
+}
+.box {
+  width:400px;
+  margin:10px auto;
+  justify-content:center;
+}
+
+.container-flex-1 {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  height:900px;
+  align-items:flex-end;
+  margin:0 auto;
+  justify-content: space-between;
+  flex-template-column-areas:
+  "box2 box1"
+  "box2 box2"
+}
+.box2-box2 {
+  width:300px;
+  overflow: auto;
+  margin:10px auto;
+}
+
+.round {
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+/* DESKTOP */
+
+@media (min-width:1080px) {
+  
+  #brands img {
+    display:inline-block;
+    border: 5px #ccc solid;
+    padding: 1px;
+    background: #F3EBE9;
+    padding:15px 15px 15px 15px;
+}
+
+#brands img:hover {
+    border: 5px #e8e8ff dotted;
+}
+
+
+/* main */
+.div {
+  display:inline-block;
+  width:33%;
+}
+
+.header-1 {
+  font-size:60px;
+  font-family:'Montserrat', 'sans-serif';
+  text-align:center;
+  background-color: #e8e8ff;
+  margin:100px auto;
+  padding:16px;
+  width:50%;
+  border: 1px solid #fff2f2;
+  box-shadow:  -1px 1px #f7f7fc, -2px 2px #f7f7fc, -3px 3px #f7f7fc, -4px 4px #f7f7fc, -5px 5px #f7f7fc;
+}
+
+.header-brands {
+  font-size:45px;
+  font-family:'Montserrat', 'sans-serif';
+  text-align:center;
+  background-color: #e8e8ff;
+  margin:80px auto;
+  padding:16px;
+  width:20%;
+  border: 1px solid #fff2f2;
+  box-shadow:  -1px 1px #f7f7fc, -2px 2px #f7f7fc, -3px 3px #f7f7fc, -4px 4px #f7f7fc, -5px 5px #f7f7fc;
+}
+
+.header-3 {
+  font-size:45px;
+  font-family:'Montserrat', 'sans-serif';
+  background-color: #e8e8ff;
+  margin:80px auto;
+  padding:16px;
+  width:50%;
+  border: 1px solid #fff2f2;
+  box-shadow:  -1px 1px #f7f7fc, -2px 2px #f7f7fc, -3px 3px #f7f7fc, -4px 4px #f7f7fc, -5px 5px #f7f7fc;
+}
+
+.header-p {
+  text-align:center;
+  font-size:20px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  background-color: #fff2f2;
+  margin:16px auto;
+  padding:16px;
+  width:90%;
+}
+
+
+body {
+  background-image: url("http://www.wallpapers13.com/wp-content/uploads/2016/07/Miami-South-Beach-Florida-Desktop-Wallpaper-HD-1920x1200-915x515.jpg"),
+  linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 1700px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  background-attachment: fixed;
+  letter-spacing: -1px;
+}
+
+.column {
+  width:33.1%;
+  display:inline-block;
+  margin:10px auto;
+}
+
+.small {
+  width:90%;
+  height:50%;
+}
+
+
+.container-flex-2 {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  height:600px;
+  align-items:flex-end;
+  font-family:'Montserrat' , 'Sans-Serif';
+  font-size:20px;
+  color:black;
+  text-align:center;
+  margin:10px;
+  justify-content: space-between;
+}
+.box {
+  width:33.33%;
+}
+
+.container-flex-1 {
+  display:flex;
+  flex-direction:rows;
+  flex-wrap:wrap;
+  justify-content:center;
+  height:600px;
+  align-items:flex-end;
+  margin:0 auto;
+  justify-content: space-between;
+}
+.box2 {
+  width:33%;
+}
+
+/* grid for footer */
+
+.grid-container {
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows:200px; 200px; 200px; 200px;
+  grid-auto-rows:100px;
+  display:grid;
+  height:200px;
+  justify-content:center;
+  align-items:center;
+  margin:400px auto;
+  grid-template-areas: 
+  "grid-1 grid-2 grid-3 grid-4";
+}
+.grid-1 {
+  grid-area:grid-1;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  padding:0px;
+}
+
+.grid-2 {
+  grid-area:grid-2;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  padding:0px;
+}
+.grid-3 {
+  grid-area:grid-3;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  padding:0px;
+}
+
+.grid-4 {
+  grid-area:grid-4;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Montserrat' , 'Sans-Serif';
+  padding:0px;
+}
+}
