@@ -1,0 +1,279 @@
+body, html {
+  background: linear-gradient(to bottom right, #e55d87, #5fc3e4);
+  width:100%;
+  height:auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+  "header header header"
+  "sidebar grid grid"
+  "sidebar grid grid"
+  "sidebar grid grid"
+  "footer footer footer";
+}
+
+article {
+  grid-area: grid;
+}
+
+sidebar {
+  grid-area: sidebar;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.footy {
+  font-family: 'Raleway';
+  font-size: 1em;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius:20px;
+  background-color:rgba(255,255,240,0.3);
+  
+}
+
+.footer {
+  display:flex;
+  flex-direction: row;
+  /*justify-content: space-around;*/
+  margin-top:10px;
+}
+
+
+.flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexitem {
+  font-size: 3em;
+  margin: 10px;
+}
+.quote {
+  font-size: 2em;
+}
+h1, h2 {
+  font-family: 'Raleway';
+  font-size: 50px;
+}
+
+h3 {
+  font-family: 'Amatic SC';
+  font-size: 40px;
+}
+
+span {
+  font-size: 12px;
+}
+
+header {
+  display:block;
+  border-radius: 20px;
+  width:85%;
+  height:162px;
+  text-align:center;
+  margin: 0 auto 20px;
+  border:5px solid black;
+}
+
+.item {
+  border:3px solid black;
+  border-radius: 50px;
+  align-items: center;
+  font-family: 'Raleway';
+  }
+ 
+ img {
+   border-radius: 45px;
+   width: 100%;
+   height: auto;
+ }
+ 
+ sidebar {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .info h4 {
+   font-size: 2em;
+   text-align: center;
+   
+ }
+ 
+ .info {
+   width:150px;
+   margin-left: 100px;
+   background-color:rgba(255,255,240,0.3);
+   border: 3px solid black;
+   border-radius:25px;
+   font-family: 'Raleway';
+   padding:5px;
+   height:100%;
+ }
+  
+/*.item:hover{*/
+/* height: 500px;*/
+/* width: 400px;*/
+/*}*/
+
+/*img:hover{*/
+/*height:500px;*/
+/*width: 400px;*/
+/*}*/
+  
+.grid {
+  margin:0 auto;
+  width:80%;
+  /*height: 800px;*/
+  display: grid;
+  grid-gap: 15px;
+  grid-template:repeat(1fr / 6) / repeat(1fr / 6);
+  grid-template-areas: 
+  "photo1 photo1 photo2 photo2 photo3 photo3"
+  "photo4 photo4 photo5 photo5 photo6 photo6"
+  "photo7 photo7 photo8 photo8 photo9 photo9"
+  }
+  
+  .photo1 {
+    grid-area: photo1;
+  }
+  .photo1 img {
+    width:100%;
+  }
+  .photo2 {
+    grid-area: photo2;
+  }
+  .photo2 img {
+    width:100%;
+  }
+  .photo3 {
+    grid-area: photo3;
+  }
+  .photo3 img {
+    width:100%;
+  }
+  .photo4 {
+    grid-area: photo4;
+  }
+  .photo4 img {
+    width:100%;
+  }
+  .photo5 {
+    grid-area: photo5;
+  }
+  .photo5 img {
+    width:100%;
+  }
+  .photo6 {
+    grid-area: photo6;
+  }
+  .photo6 img {
+    width:100%;
+  }
+  .photo7 {
+    grid-area: photo7;
+  }
+  .photo7 img {
+    width:100%;
+  }
+  .photo8 {
+    grid-area: photo8;
+  }
+  .photo8 img {
+    width:100%;
+  }
+  .photo9 {
+    grid-area: photo9;
+  }
+  .photo9 img {
+    width:100%;
+  }
+  
+ 
+ @media (max-width: 786px){
+   .grid {
+     grid-template-areas:
+     "photo1 photo1 photo1 photo2 photo2 photo2"
+     "photo3 photo3 photo3 photo4 photo4 photo4"
+     "photo5 photo5 photo5 photo6 photo6 photo6"
+     "photo7 photo7 photo7 photo8 photo8 photo8"
+     "photo9 photo9 photo9 photo9 photo9 photo9"
+ }
+    .photo9{
+      width:300px;
+      height:auto;
+      margin: 0 auto;
+    }
+    
+  .footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*position:relative;*/
+  /*top:400px;*/
+}
+
+.footy {
+  flex-grow:1;
+  width: 90%;
+  text-align: center;
+}
+ }
+ 
+  @media (max-width: 615px){
+   
+   .wrapper {
+     grid-template-areas:
+     "header header header"
+     "sidebar sidebar sidebar"
+     "grid grid grid"
+     "footer footer footer"
+   }
+   
+   .info {
+     width: 80%;
+     padding:10px;
+     margin: 0 auto;
+   }
+   
+   .grid {
+     grid-template-areas:
+     "photo1 photo1 photo1 photo1 photo1 photo1"
+     "photo2 photo2 photo2 photo2 photo2 photo2"
+     "photo3 photo3 photo3 photo3 photo3 photo3"
+     "photo4 photo4 photo4 photo4 photo4 photo4"
+     "photo5 photo5 photo5 photo5 photo5 photo5"
+     "photo6 photo6 photo6 photo6 photo6 photo6"
+     "photo7 photo7 photo7 photo7 photo7 photo7"
+     "photo8 photo8 photo8 photo8 photo8 photo8"
+     "photo9 photo9 photo9 photo9 photo9 photo9"
+   }
+   .flexitem {
+     font-size:2em;
+   }
+  .flexitemquote {
+    font-size:0.4em;
+  }
+  
+  header {
+    height:200px;
+  }
+ }
+  
+  
+  
+ 
+  
+  
